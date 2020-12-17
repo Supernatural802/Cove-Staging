@@ -1,0 +1,134 @@
+/* set your initial positions in the javascript, not the CSS, put attributes you'll not be animating here */
+
+
+/* css reflects all the divs named in the html */
+
+
+/* creates the green background box */
+
+/*
+ #temp {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-image: url(imgs/Frame03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+} 
+*/
+
+
+
+
+
+#bk1 {
+
+    background-image: url(imgs/bk1.jpg);
+}
+
+#bk2 {
+
+    background-image: url(imgs/bk2.jpg);
+}
+
+#bk3 {
+
+    background-image: url(imgs/bk3.jpg);
+}
+
+
+
+
+
+
+#copy01 {
+    top: 17px;
+    left: 120px;
+
+}
+
+#copy02 {
+
+    top: 18px;
+    left: 89px;
+}
+
+
+
+
+#highlight {
+
+    background-image: url(imgs/highlight.png);
+}
+
+#productShot {
+
+    background-image: url(imgs/productShot.png);
+}
+
+#productShot_dropShadow {
+
+    background-image: url(imgs/productShot_dropShadow.png);
+}
+
+#productShot_highlight {
+
+    background-image: url(imgs/productShot_highlight.png);
+}
+
+#logo01 {
+
+    background-image: url(imgs/logo01.png);
+}
+
+#logo02 {
+
+    background-image: url(imgs/logo02.png);
+}
+
+#logo01_dropShadow {
+
+    background-image: url(imgs/logo01_dropShadow.png);
+}
+
+ 
+
+
+
+#ctaCopy_over {
+    background-image: url(imgs/ctaCopy_over.png);
+
+}
+
+#ctaCopy_off {
+    background-image: url(imgs/ctaCopy_off.png);
+
+}
+
+#cta {
+    position: absolute;
+    overflow: hidden;
+    top: 30px;
+    left: 232px;
+    height: 38px;
+    width: 15px;
+    border-radius: 5px;
+    z-index: 600;
+    background-color: #fffaf000;
+}
+
+#cta_Arrow {
+    position: absolute;
+    overflow: hidden;
+    top: 2px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 8px solid white;
+    border-bottom: 4px solid transparent;
+    z-index: 600;
+
+}

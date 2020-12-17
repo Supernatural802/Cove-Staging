@@ -1,0 +1,156 @@
+/* set your initial positions in the javascript, not the CSS, put attributes you'll not be animating here */
+
+
+/* css reflects all the divs named in the html */
+
+
+/* creates the green background box */
+
+/*
+ #temp {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-image: url(imgs/Frame03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+} 
+*/
+
+
+
+
+
+#bk1 {
+
+    background-image: url(imgs/bk1.jpg);
+}
+
+#bk2 {
+
+    background-image: url(imgs/bk2.jpg);
+}
+
+#person01 {
+
+    background-image: url(imgs/person01.png);
+}
+
+
+
+
+
+#copy01 {
+    top: 295px;
+    left: 23px;
+
+}
+
+#copy02 {
+
+    top: 338px;
+    left: 23px;
+}
+
+#copy03 {
+    top: 298px;
+    left: 23px;
+
+}
+
+#copy04 {
+
+    top: 337px;
+    left: 23px;
+}
+
+#copy05 {
+
+    top: 372px;
+    left: 23px;
+}
+
+#copy06 {
+
+    top: 410px;
+    left: 23px;
+}
+
+
+
+#highlight {
+
+    background-image: url(imgs/highlight.png);
+}
+
+#productShot {
+
+    background-image: url(imgs/productShot.png);
+}
+
+#productShot_dropShadow {
+
+    background-image: url(imgs/productShot_dropShadow.png);
+}
+
+#productShot_Highlight {
+
+    background-image: url(imgs/productShot_Highlight.png);
+}
+
+#logo01 {
+
+    background-image: url(imgs/logo01.png);
+}
+
+#logo01_dropShadow {
+
+    background-image: url(imgs/logo01_dropShadow.png);
+}
+
+ 
+
+
+
+#ctaCopy_over {
+    background-image: url(imgs/ctaCopy_over.png);
+    top: 0px;
+    left: -70px;
+
+
+}
+
+#ctaCopy_off {
+    background-image: url(imgs/ctaCopy_off.png);
+
+    top: 0px;
+    left: -70px;
+}
+
+#cta {
+    position: absolute;
+    overflow: hidden;
+    top: 488px;
+    left: 132px;
+    height: 38px;
+    width: 15px;
+    border-radius: 5px;
+    z-index: 600;
+    background-color: #fffaf000;
+}
+
+#cta_Arrow {
+    position: absolute;
+    overflow: hidden;
+    top: 1px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 9px solid white;
+    border-bottom: 5px solid transparent;
+    z-index: 600;
+
+}
