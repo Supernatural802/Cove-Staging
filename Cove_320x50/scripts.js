@@ -30,7 +30,7 @@
 
         t.from(bk1, 0, { autoAlpha: 0, delay: 0 });
         t.from(logo01, 1, { autoAlpha: 0, ease: Power3.easeOut, delay: 1 });
-        t.from(logo01, 1, {  y: "+=3", ease: Power3.easeOut, delay: 1.4  });
+        t.from(logo01, 1, {  y: "+=2", ease: Power3.easeOut, delay: 1.4  });
         
         t.from(logo01_dropShadow, 2, { autoAlpha: 0, ease: Power3.easeOut, delay: 1.5 });
         t.from(bk2, 1, { autoAlpha: 0, delay: .5 });
@@ -44,11 +44,14 @@
 
 
         t.to([bk1, logo01, logo01_dropShadow], .5, { autoAlpha: 0, ease: Power3.easeOut, delay: 0 });
-        // t.from([highlight], 1, { autoAlpha: 0, delay: 0 });
 
-        t.from(copy01, 1, { autoAlpha: 0, y: "+=20", ease: Power3.easeOut, delay: 1 });
-        t.from(productShot_highlight, 1, {  autoAlpha: 0, ease: Power1.easeOut, delay: 1.3});
-        t.to(productShot_highlight, 1.5, { autoAlpha: 0, ease: Power1.easeOut, delay: 2});
+        t.from(copy01, 1, { autoAlpha: 0, y: "+=20", ease: Power3.easeOut, delay: .7 });
+
+        // t.from(productShot_Highlight, 1, { y: "-=100",  ease: Power3.easeOut, delay: 1});
+        t.from(productShot, 1, {  autoAlpha: 0, x: "+=10", ease: Power3.easeOut, delay: .5});
+
+      
+        // t.to(productShot_Highlight, 1.5, { autoAlpha: 0, ease: Power1.easeOut, delay: 2});
         t.from(bk3, 1, { autoAlpha: 0, delay: .5 });
 
 
@@ -67,15 +70,11 @@
 
     function Frame03() {
 
-        t.to(copy01, .5, { autoAlpha: 0, ease: Power3.easeOut, delay: 0 });
-        
-        t.from(logo02, 1, { autoAlpha: 0, delay: 1 });
-        // t.to(highlight, 1, { autoAlpha: 0, ease: Power3.easeOut, delay: .5 });
-        t.to([bk2], 1, { x: "-=242", ease: Power3.easeOut, delay: .5 });
-       
-        t.from(copy02, 1, { autoAlpha: 0, y: "+=20", ease: Power3.easeOut, delay: 1.5 });
 
-        // t.from([cta, ctaCopy_off], 1, { autoAlpha: 0, y: "+=10", ease: Power3.easeOut, delay: 1.5, onComplete: function() { rolloverActive = true } });
+        t.to(bk2, 1, { autoAlpha: 0, delay: 0 });
+        t.to(copy01, .5, { autoAlpha: 0, ease: Power3.easeOut, delay: 0 });
+        t.from(copy02, 1, { autoAlpha: 0, y: "+=20", ease: Power3.easeOut, delay: 1 });
+
 
 
 
@@ -83,36 +82,36 @@
     }
 
 
-    //rollover functions
-    document.getElementById('hit').onmouseover =
-        function(event) {
-            {
-                if (rolloverActive) {
-                    // t.set(cta_whiteSlide, { x: -100 });
-                    t.to(cta_Arrow, .5, { x: "+=30", ease: Power3.easeOut });
-                    t.to(ctaCopy_off, .7, { autoAlpha: 0, ease: Power3.easeOut });
-                    t.to(ctaCopy_over, .7, { autoAlpha: 1, ease: Power3.easeOut });
-                    t.to(productShot, 1, { y: -5, ease: Power3.easeOut });
-                    t.to(productShot_dropShadow, 1, { autoAlpha: .5, ease: Power3.easeOut });
+    // //rollover functions
+    // document.getElementById('hit').onmouseover =
+    //     function(event) {
+    //         {
+    //             if (rolloverActive) {
+    //                 // t.set(cta_whiteSlide, { x: -100 });
+    //                 t.to(cta_Arrow, .5, { x: "+=30", ease: Power3.easeOut });
+    //                 t.to(ctaCopy_off, .7, { autoAlpha: 0, ease: Power3.easeOut });
+    //                 t.to(ctaCopy_over, .7, { autoAlpha: 1, ease: Power3.easeOut });
+    //                 t.to(productShot, 1, { y: -5, ease: Power3.easeOut });
+    //                 t.to(productShot_dropShadow, 1, { autoAlpha: .5, ease: Power3.easeOut });
                   
-                }
-            }
-        };
+    //             }
+    //         }
+    //     };
 
-    document.getElementById('hit').onmouseout =
-        function(event) {
-            {
-                if (rolloverActive) {
-                    t.set(cta_Arrow, { x: -100 });
-                    t.to(cta_Arrow, .5, { x:0, ease: Power3.easeOut });
-                    t.to(ctaCopy_off, .7, { autoAlpha: 1, ease: Power3.easeOut });
-                    t.to(ctaCopy_over, .7, { autoAlpha: 0, ease: Power3.easeOut });
-                    t.to(productShot, 1, { y: 0, ease: Power3.easeOut });
-                    t.to(productShot_dropShadow, 1, { autoAlpha: 1, ease: Power3.easeOut });
+    // document.getElementById('hit').onmouseout =
+    //     function(event) {
+    //         {
+    //             if (rolloverActive) {
+    //                 t.set(cta_Arrow, { x: -100 });
+    //                 t.to(cta_Arrow, .5, { x:0, ease: Power3.easeOut });
+    //                 t.to(ctaCopy_off, .7, { autoAlpha: 1, ease: Power3.easeOut });
+    //                 t.to(ctaCopy_over, .7, { autoAlpha: 0, ease: Power3.easeOut });
+    //                 t.to(productShot, 1, { y: 0, ease: Power3.easeOut });
+    //                 t.to(productShot_dropShadow, 1, { autoAlpha: 1, ease: Power3.easeOut });
                
-                }
-            }
-        };
+    //             }
+    //         }
+    //     };
 
 
 
